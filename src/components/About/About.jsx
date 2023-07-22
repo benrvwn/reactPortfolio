@@ -27,7 +27,12 @@ function Post(props){
             <div className='post'>
                 {props.post}
             </div>
-            { liked === 'liked' ? (<p>1 like</p>) : null }
+            { liked === 'liked' ? 
+            (<p>1 like
+                {comments.length > 0 ? (<span style={{margin:'5px'}}>{comments.length} comments</span>) : null}
+            </p>) 
+            : null 
+            }
             <div className='action'>
                 <button onClick={()=>liked === 'liked' ? setLiked('') : setLiked('liked')} className={liked === 'liked' ? 'liked' : ''}><i className="bi bi-hand-thumbs-up"></i>Like</button>
                 <span></span>
