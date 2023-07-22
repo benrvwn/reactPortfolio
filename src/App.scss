@@ -1,0 +1,27 @@
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color:#333333;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:#C5D2DB;
+    
+}
+
+div.pages{
+    height:100vh;
+    margin-left:100px;
+    background-color:#C5D2DB;
+    
+
+    div{
+        max-width: 1280px;
+        margin:auto;
+    }
+}
+

@@ -1,0 +1,147 @@
+*{
+
+}
+
+div.about{
+    
+    .about-container{
+        display:flex;
+        flex-direction: column;
+        padding:20px;
+
+        .post-container{
+            width:80%;
+            background-color: #FEFEFE;
+            border-radius: 10px;
+            padding:10px;
+            margin-bottom: 20px;
+            transition:0.5s;
+            box-shadow:
+                5.8px 5.3px 0.4px rgba(0, 0, 0, 0.096),
+                8.2px 7.5px 5.7px rgba(0, 0, 0, 0.108),
+                12px 11px 31px rgba(0, 0, 0, 0.07);
+            animation:fadeInUp;
+            animation-duration: 1s;
+            
+
+            .header{
+                height:120px;
+                width:100%;
+
+                .image{
+                    display:inline-block;
+                    width:100px;
+                    height:100px;
+                    border-radius: 50%;
+                    border:5px solid green;
+                    background-image: url('../../assets/me.JPG');
+                    background-size: cover;
+                    margin:10px;
+
+                }
+
+                .name{
+                    display:inline-block;
+                    vertical-align: top;
+
+                    h3{
+                        margin-top:30px;
+                        margin-bottom: 0;
+                        font-family: 'Jost', sans-serif;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+            .post{
+                padding:10px;
+                
+                span{
+                    display: inline-block;
+                    padding:5px;
+                    border-radius: 5px;
+                    margin: 5px 5px 0px 0px;
+                    border:1px solid #333333;
+                    background-color:#EAEEF2;
+                }
+            }
+            .action{
+
+                button{
+                    border:none;
+                    width:50%;
+                    border-radius: 0 5px 5px 0;
+
+                    i{
+                        margin-right: 5px;
+                    }
+
+                    
+                }
+                button.liked{
+                    color:#007BFF;
+                    i{
+                        color:#007BFF;
+                    }
+
+                }
+                button:first-child{
+                    border-right: 1px solid #dddddd;
+                    border-radius: 5px 0 0 5px;
+                }
+
+
+            }
+            .comments{
+                margin:20px;
+                padding:5px;
+                border-bottom: 1px solid #dddddd;
+                border-radius: 10px;
+                overflow: hidden;
+
+                h4{
+                    font-family: 'Jost', sans-serif;
+                    font-weight: 500;
+                }
+            }
+            .comment{
+                margin-top:10px;
+                
+
+                form{
+                    display:flex;
+                    align-items: center;
+
+                    input{
+                        flex:1;
+                        border:1px solid #dddddd;
+                        padding:10px;
+                        border-radius: 10px 0 0 10px;
+                        border-right: none;
+                    }
+                    button{
+                        width:48px;
+                        padding:4px;
+                        vertical-align: bottom;
+                        border:1px solid #dddddd;
+                        border-left:none;
+                        font-size:25px;
+                        border-radius: 0px 10px 10px 0px;
+                    }
+
+                }
+
+                
+            }
+
+        }
+        .post-container:hover{
+            box-shadow: unset;
+            transform: translate(5px, 5px);
+        }
+    }
+
+}

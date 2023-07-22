@@ -1,0 +1,42 @@
+
+div.home{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    overflow: hidden;
+    
+    
+    div.home-content *{
+        text-align: center;
+        
+    }
+
+    div.home-content{
+        height:80%;
+        margin-bottom:none;
+        width:80%;
+        z-index: 2;
+        
+
+        h1{
+            font-size: 6vw;
+            font-family: 'Jost', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            animation: fadeInDown;
+            animation-duration: 2s;
+        }
+        p{
+            font-size: 2.5vw;
+            animation: fadeIn;
+            animation-duration: 2s;
+        }
+        img{
+            width:100%;
+            opacity:0.8;
+            animation-duration: 5s;
+        }
+    }
+}
