@@ -9,8 +9,8 @@ function Home() {
             <h1>I'm Benhur Verwin</h1>
             <p>Web Developer</p>
             <div>
-                <a href="#">LEARN MORE</a>
-                <a href="#">CONTACT ME</a>
+                <a href="about">LEARN MORE</a>
+                <a href="contacts">CONTACT ME</a>
             </div>
             <img src={Nikon} alt="Image" className="animate__animated animate__pulse animate__infinite"/> 
         </div>

@@ -36,8 +36,7 @@
             border-radius: 10px;
             overflow: hidden;
             background-color: #FEFEFE;
-            animation:fadeInRight;
-            animation-duration: 2s;
+            
             transition:0.3s;
 
             .image{
@@ -98,6 +97,50 @@
             transform: scale(1.1);
             box-shadow: unset;
             outline:1px solid #007BFF;
+        }
+        .proj_sweap, .proj_bbms{
+            animation:fadeInRight;
+            animation-duration: 2s;
+        }
+        .proj_portfolio, .proj_jollibols{
+            animation:fadeInLeft;
+            animation-duration: 2s;
+        }
+    }
+}
+
+
+
+
+// /* Large devices such as laptops (1024px and up) */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 826px) {
+    .projects{
+
+        .project-container{
+            width:100%;
+        }
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+    .projects{
+
+        .project-container{
+            padding:10px;
+            font-size: smaller;
+            .project{
+                flex-direction: column;
+
+                .image{
+                    width:100%;
+                }
+            }
         }
     }
 }

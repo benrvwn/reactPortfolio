@@ -26,8 +26,8 @@
                 justify-content: center;
                 align-items: center;
                 transition:0.2s;
-                animation:fadeInRight;
-                animation-duration: 1.5s;
+                // animation:fadeInRight;
+                // animation-duration: 1.5s;
 
                 img{
                     height:100px;
@@ -42,16 +42,22 @@
 
             .facebook{
                 background-color: #11489b;
+                animation:fadeInDown;
             }
             .linkedin{
                 background-color: #174e8b;
-                
+                animation:fadeInUp;
             }
             .github{
                 background-color: #194058;
+                animation:fadeInDown;
             }
             .gmail{
                 background-color: #FEFEFE;
+                animation:fadeInUp;
+            }
+            .facebook, .linkedin, .github, .gmail{
+                animation-duration: 1.5s;
             }
         }
 
@@ -84,6 +90,8 @@
                 background-color: #FEFEFE;
                 border-radius: 10px;
                 padding:30px;
+                animation:fadeIn;
+                animation-duration: 1.5s;
 
                 input, label, textarea{
                     display:block;
@@ -121,6 +129,48 @@
                     height:100px;
                 }
                 
+            }
+        }
+    }
+}
+
+
+
+// /* Large devices such as laptops (1024px and up) */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 826px) {
+    .contacts{
+    
+        .container{
+            width:100%;
+
+            .contacts-container{
+                padding:20px;
+                grid-template-columns:auto auto;
+            }
+            .form-container{
+                padding:20px;
+            }
+        }
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+    .contacts{
+    
+        .container{
+            padding:10px;
+
+            .contacts-container{
+                padding:10px;
+            }
+            .form-container{
+                padding:10px;
             }
         }
     }

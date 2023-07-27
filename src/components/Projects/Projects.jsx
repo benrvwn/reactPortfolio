@@ -3,9 +3,10 @@ import './projects.scss';
 import Nikon from '../../assets/nikon.png';
 
 function Project(props){
-    const className = `image ${props.className}`
+    const className = `image ${props.className}`;
+    const divClass = `project ${props.divClass}`;
     return (
-        <div className='project'>
+        <div className={divClass}>
             <div className={className}></div>
             <div className='proj-desc'>
                 <h5>{props.title}</h5>
@@ -29,6 +30,7 @@ function Projects() {
                 title='SWEAP Monitoring System' 
                 desc='Built a system software application called Social Welfare Employees Association of the Philippines (SWEAP) monitoring system on Department of Social Welfare and Development (DSWD) '
                 className= 'sweap'
+                divClass='proj_sweap'
                 tech='VB.net, MySQL, XAMPP'
                 github='https://github.com/benrvwn/SWEAP'
             />
@@ -36,6 +38,7 @@ function Projects() {
                 title='Portfolio Landing Page' 
                 desc='haha'
                 className='portfolio'
+                divClass='proj_portfolio'
                 tech='HTML, CSS, SASS, JavaScript, ReactJS'
                 github='https://github.com/benrvwn/reactPortfolio.git'
 
@@ -43,12 +46,14 @@ function Projects() {
             <Project 
                 title='BBMS commercial website' 
                 desc='Blood Bank Management System (BBMS) commercial website is part of our capstone project called Blood Bank Management system.' 
+                divClass='proj_bbms'
                 tech='HTML, CSS, Bootstrap, JQuery, Firebase'
             />
             <Project 
                 title='JolliBola' 
                 desc='a small POS (Point of Sales) project I made for our final programming assignment in my third year of college.' 
                 tech='VB.net, MySQL, XAMPP'
+                divClass='proj_jollibols'
                 github='https://github.com/benrvwn/jollibols.git'
             />
         </div>

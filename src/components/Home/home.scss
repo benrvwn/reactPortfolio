@@ -22,7 +22,7 @@ div.home{
             padding:20px;
 
             a{
-                padding:10px;
+                padding:10px 20px 10px 20px;
                 margin:0 30px 30px 30px;
                 text-decoration: none;
                 border:1px solid #333333;
@@ -30,6 +30,8 @@ div.home{
                 color:#333333;
                 display:inline-block;
                 transition:0.5s;
+                animation:fadeInUp;
+                animation-duration: 2s;
             }
             a:hover{
                 background-color:#333333;

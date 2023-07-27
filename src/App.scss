@@ -24,3 +24,28 @@ div.pages{
     }
 }
 
+
+
+
+// /* Large devices such as laptops (1024px and up) */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 768px) {
+    div.pages{
+        margin-left:unset;
+    }
+    nav{
+        display:none;
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+
+}
+
+
+

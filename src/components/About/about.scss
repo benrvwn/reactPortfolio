@@ -161,3 +161,24 @@ div.about{
     }
 
 }
+
+
+
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+    div.about{
+
+        .about-container{
+            padding:0px;
+
+            h1, .post-container{
+                width:95%;
+            }
+
+            .post-container{
+                font-size:smaller;
+            }
+        }
+    }
+}
