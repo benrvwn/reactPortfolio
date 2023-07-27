@@ -53,7 +53,7 @@ function Post(props){
                     }
                         <div className='comment'>
                             <form onSubmit={handleComment}>
-                                <input type="text" value={comment} onChange={(e)=> setComment(e.target.value)} placeholder='Write a comment...'/>
+                                <input type="text" value={comment} onChange={(e)=> setComment(e.target.value)} placeholder='Write a comment...' required/>
                                 <button type='submit'><i className="bi bi-send-fill"></i></button>
                             </form>
                         </div>
@@ -79,9 +79,7 @@ function About() {
   return (
     <div className='about'>
         <div className='about-container'>
-            <Post post={
-                <h1>About me :D</h1>
-            } />
+            <h1>ABOUT ME</h1>
             <Post post={
                 <>
                     <p>I am a fresh graduate of Information Technology
