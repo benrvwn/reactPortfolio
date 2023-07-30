@@ -59,6 +59,11 @@
                 background-size: cover;
                 background-position: center; 
             }
+            .bbms{
+                background-image:url('../../assets/bbms.PNG');
+                background-size: cover;
+                background-position: center; 
+            }
             .proj-desc{
                 flex:1;
                 margin: 0;
@@ -96,7 +101,6 @@
         .project:hover{
             transform: scale(1.1);
             box-shadow: unset;
-            outline:1px solid #007BFF;
         }
         .proj_sweap, .proj_bbms{
             animation:fadeInRight;

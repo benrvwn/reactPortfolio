@@ -11,7 +11,7 @@ function Project(props){
             <div className='proj-desc'>
                 <h5>{props.title}</h5>
                 <p>{props.desc}</p>
-                <a href="#">Demo</a>
+                <a href={props.demo} target='_blank'>Demo</a>
                 <a href={props.github} target='_blank'>GitHub</a>
        
                 <i>{props.tech}</i>
@@ -46,8 +46,11 @@ function Projects() {
             <Project 
                 title='BBMS commercial website' 
                 desc='Blood Bank Management System (BBMS) commercial website is part of our capstone project called Blood Bank Management system.' 
+                className='bbms'
                 divClass='proj_bbms'
                 tech='HTML, CSS, Bootstrap, JQuery, Firebase'
+                github='https://github.com/JHONZY/Blood_Bank_Management'
+                demo='https://jhonzy.github.io/Blood_Bank_Management/'
             />
             <Project 
                 title='JolliBola' 
@@ -55,6 +58,7 @@ function Projects() {
                 tech='VB.net, MySQL, XAMPP'
                 divClass='proj_jollibols'
                 github='https://github.com/benrvwn/jollibols.git'
+                
             />
         </div>
     </div>

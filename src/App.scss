@@ -23,20 +23,25 @@ html.dark{
             }
             ul li.mode-container div.mode-switch{
                 background-color: $bgColor;
+                box-shadow: inset 0px 0px 9px rgba(255, 132, 56, 0.34);
             }
         }   
 
         div.pages{
             background-color: $bgColor;
+            background-image:url('./assets/iron.png');
+
+            div.home div.home-content h1 {
+                color:$fontColor;
+            }
 
             div.home div.home-content div a {
-                color:$fontColor;
-                border-color: $fontColor;
+                color:$blue;
+                border-color: $blue;
             }
             div.home div.home-content div a:hover{
                 color:$navColor;
-                border-color: $fontColor;
-                background-color:$fontColor;
+                background-color:$blue;
             }
             div.about .about-container h1, .post-container{
                 background-color: $navColor;
@@ -48,7 +53,7 @@ html.dark{
             div.about .about-container .post-container{
                 background-color: $cardColor;
                 button{
-                    background-color: $navColor
+                    background-color: #201b15;
                 }
                 input{
                     background-color: transparent;
@@ -80,13 +85,27 @@ html.dark{
                     border-color:$blue;
                     color:$blue;
                 }
+                a:hover{
+                    background-color: $blue;
+                    color:$cardColor;
+                }
                 i{
                     color:$blue;
                 }
             }
+            .contacts .container h1, .form-container form, .contacts .container .contacts-container .item{
+                box-shadow:
+                    5.8px 5.3px 0.4px rgba(255, 132, 56, 0.096),
+                    8.2px 7.5px 5.7px rgba(255, 132, 56, 0.108),
+                    12px 11px 31px rgba(255, 132, 56, 0.07);
+            }
             .contacts .container h1{
                 background: $navColor;
             }
+            .contacts .container .contacts-container .item:hover{
+                box-shadow:unset;
+            }
+            
             .contacts .container .form-container form {
                 background-color:$cardColor;
 
@@ -123,6 +142,7 @@ body{
 
 div.pages{
     margin-left:100px;
+    background-image: url('./assets/batthern.png');
     background-color:$bgColor;
     min-height: 100vh;
 

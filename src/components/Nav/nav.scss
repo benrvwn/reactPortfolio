@@ -45,8 +45,8 @@ nav{
     width:100px;
     height:100vh;
     position:fixed;
-    left:1px;
-    top:1px;
+    left:0px;
+    top:0px;
     background-color:#EAEEF2;
 
     ul{
@@ -104,7 +104,7 @@ nav{
                
     
                 .light {
-                    background-color: white;
+                    background-color: #007BFF;
                     height: 40px;
                     width: 40px;
                     border-radius: 50%;
@@ -115,7 +115,8 @@ nav{
                 
                 .light.dark {
                     transform:translateX(80%);
-                    box-shadow: -5px 0px 9px rgba(0, 0, 0, 0.34);
+                    box-shadow: -5px 0px 9px rgba(255, 132, 56, 0.34);
+                    background-color: #FF8438;
                 }
             }
         }
@@ -153,6 +154,12 @@ nav{
         box-shadow:
             0.5px 0.9px 1.8px rgba(0, 0, 0, 0.269),
             4px 7px 14px rgba(0, 0, 0, 0.35)
+            ;
+    }
+    html.dark nav.open{
+        box-shadow:
+            0.5px 0.9px 1.8px rgba(255, 132, 56, 0.34),
+            4px 7px 14px rgba(255, 132, 56, 0.34)
             ;
     }
     .change .line1{
