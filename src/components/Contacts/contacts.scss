@@ -161,10 +161,12 @@
 
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 640px) {
+    
     .contacts{
     
         .container{
             padding:10px;
+            font-size: smaller;
 
             .contacts-container{
                 padding:10px;

@@ -3,6 +3,7 @@ import './about.scss';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
+
 function Post(props){
     const [liked, setLiked] = useState('');
     const [comments, setComments] = useState([]);
@@ -107,6 +108,31 @@ function About() {
                     <Tech tech1='React' tech2='WAMP'/>
                     <Tech tech1='Git' tech2='GitHub'/>
                     <Tech tech1='Photoshop' tech2='Macromedia Flash 8'/>
+                </>
+            } />
+            <Post post={
+                <> 
+                    <h5>Experience:</h5>
+                    <h8><b>DSWD - Intern/OJT</b></h8>
+                    <ul>
+                        <li>Created a detailed flowchart to visually represent the various processes and workflows involved in the department's operations.</li>
+                        <li>Produced a professional video tutorial demonstrating the functionalities of the system, providing an intuitive visual guide for users.</li>
+                        <li>Contributed to improving operational efficiency and effectiveness within the Department of Social Welfare and Development through the successful implementation of the developed system.</li>
+                    </ul>
+                    <h8><b>Village88 coding bootcamp - Trainee</b></h8>
+                    <ul>
+                        <li>Attended a three months intense training and gained a lot of knowledge which also the reason how I created this portfolio website and most of my projects.</li>
+                    </ul>
+                </>
+            } />
+            <Post post={
+                <>
+                    <h5>Certificates:</h5>
+                    <div>
+                        <p><b>FreeCodeCamp </b> - <a href="https://rb.gy/d4o9l" target="_blank">Responsive Web Design</a></p>
+                        <p><b>Village88 </b> - <a href="https://rb.gy/3djvk" target="_blank">Web Fundamentals</a></p>
+                        <p><b>Village88 </b> - <a href="https://rb.gy/pbzkk" target="_blank">Advanced PHP Track</a></p>
+                    </div>
                 </>
             } />
         </div>

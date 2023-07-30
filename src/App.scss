@@ -1,3 +1,111 @@
+@import './components/colors.scss';
+
+// ---------------------------DARK MODE-------------------------------------------------------//
+html.dark{
+    $bgColor:#3A2D24 ;
+    $navColor: #15110D;
+    $cardColor: #010101;
+    $fontColor: #CCCCCF;
+    $blue: #FF8438;
+    
+    *{
+        color: $fontColor;
+    }
+
+    body{
+        background-color:$bgColor;
+
+        nav{
+            background-color: $navColor;
+            color:$fontColor;
+            ul li a i:hover{
+                color:$blue;
+            }
+            ul li.mode-container div.mode-switch{
+                background-color: $bgColor;
+            }
+        }   
+
+        div.pages{
+            background-color: $bgColor;
+
+            div.home div.home-content div a {
+                color:$fontColor;
+                border-color: $fontColor;
+            }
+            div.home div.home-content div a:hover{
+                color:$navColor;
+                border-color: $fontColor;
+                background-color:$fontColor;
+            }
+            div.about .about-container h1, .post-container{
+                background-color: $navColor;
+                box-shadow:
+                    5.8px 5.3px 0.4px rgba(255, 132, 56, 0.096),
+                    8.2px 7.5px 5.7px rgba(255, 132, 56, 0.108),
+                    12px 11px 31px rgba(255, 132, 56, 0.07);
+            }
+            div.about .about-container .post-container{
+                background-color: $cardColor;
+                button{
+                    background-color: $navColor
+                }
+                input{
+                    background-color: transparent;
+                }
+                .post span{
+                    background-color: $navColor;
+                }
+            }
+            div.about .about-container .post-container .action button.liked{
+                color:$blue;
+                i{
+                    color:$blue;
+                }
+            }
+            .projects .project-container{
+                h1{
+                    background-color: $navColor;
+                }
+                .project{
+                    background-color: $cardColor;
+                }
+                h1, .project{
+                    box-shadow:
+                    5.8px 5.3px 0.4px rgba(255, 132, 56, 0.096),
+                    8.2px 7.5px 5.7px rgba(255, 132, 56, 0.108),
+                    12px 11px 31px rgba(255, 132, 56, 0.07);
+                }
+                a{
+                    border-color:$blue;
+                    color:$blue;
+                }
+                i{
+                    color:$blue;
+                }
+            }
+            .contacts .container h1{
+                background: $navColor;
+            }
+            .contacts .container .form-container form {
+                background-color:$cardColor;
+
+                input[type=submit]{
+                    border-color:$blue;
+                    color:$blue;
+                }
+                input[type=submit]:hover{
+                    background-color: $blue;
+                    color:$cardColor;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+    }
+}
+// ---------------------------------END OF DARK MODE-----------------------------------------------------//
+
 
 *{
     margin:0;
@@ -5,17 +113,17 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    color:#333333;
+    color:$fontColor;
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color:#C5D2DB;
+    background-color:$bgColor;
     
 }
 
 div.pages{
     margin-left:100px;
-    background-color:#C5D2DB;
+    background-color:$bgColor;
     min-height: 100vh;
 
     div{
@@ -36,9 +144,6 @@ div.pages{
 @media only screen and (max-width: 768px) {
     div.pages{
         margin-left:unset;
-    }
-    nav{
-        display:none;
     }
 }
 
