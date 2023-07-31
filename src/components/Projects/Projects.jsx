@@ -31,12 +31,13 @@ function Projects() {
                 desc='Built a system software application called Social Welfare Employees Association of the Philippines (SWEAP) monitoring system on Department of Social Welfare and Development (DSWD) '
                 className= 'sweap'
                 divClass='proj_sweap'
+                demo='https://drive.google.com/file/d/11muFIXSyrHPuRQ-oUPlgnaCGCDlEnkP_/view?usp=sharing'
                 tech='VB.net, MySQL, XAMPP'
                 github='https://github.com/benrvwn/SWEAP'
             />
             <Project 
                 title='Portfolio Landing Page' 
-                desc='haha'
+                desc='My personal website to showcase my skills, achievements and expertise.'
                 className='portfolio'
                 divClass='proj_portfolio'
                 tech='HTML, CSS, SASS, JavaScript, ReactJS'

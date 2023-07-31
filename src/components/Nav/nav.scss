@@ -145,6 +145,7 @@ nav{
         transition:0.5s;
         overflow: hidden;
         font-size: smaller;
+        z-index: 3;
     }
     nav.open{
         display:block;

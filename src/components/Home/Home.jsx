@@ -11,14 +11,15 @@ function Home() {
             <p>Web Developer</p>
             <div>
                 <Link to='/about'>
-                LEARN MORE
+                ABOUT ME
                 </Link>
                 <Link to='/contacts'>
                 CONTACT ME
                 </Link>
             </div>
-            <img src={Nikon} alt="Image" className="animate__animated animate__pulse animate__infinite"/> 
+            
         </div>
+        <img src={Nikon} alt="Image" className="animate__animated animate__pulse animate__infinite"/> 
         
         
     </div>
