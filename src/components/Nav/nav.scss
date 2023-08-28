@@ -109,7 +109,15 @@ nav{
                     width: 40px;
                     border-radius: 50%;
                     transition:0.5s;
-                    box-shadow: 5px 0px 9px rgba(0, 0, 0, 0.34)
+                    box-shadow: 5px 0px 9px rgba(0, 0, 0, 0.34);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i{
+                        font-size: 20px;
+                        transition: 0.5s;
+                    }
                     
                 }
                 
@@ -117,6 +125,11 @@ nav{
                     transform:translateX(80%);
                     box-shadow: -5px 0px 9px rgba(255, 132, 56, 0.34);
                     background-color: #FF8438;
+
+                    i{
+                        color:yellow;
+                        font-size: 20px;
+                    }
                 }
             }
         }

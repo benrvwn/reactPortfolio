@@ -48,6 +48,12 @@
 
             }
 
+            .loan{
+                background-image: url('../../assets/loan.png');
+                background-size: cover;
+                background-position: center;
+            }
+
             .sweap{
                 background-image: url('../../assets/sweap.png');
                 background-size: cover;
@@ -87,11 +93,16 @@
                     color:#FEFEFE;   
                 }
                 i{
-                    display:block;
-                    margin-top:20px;
-                    float:right;
+                    // display:block;
+                    // margin-top:20px;
+                    // float:right;
+                    // font-size: 15px;
+                    // color:#007BFF;
                     font-size: 15px;
                     color:#007BFF;
+                    position:absolute;
+                    bottom:20px;
+                    right:20px;
                   
                 }
             }
@@ -106,7 +117,7 @@
             animation:fadeInRight;
             animation-duration: 2s;
         }
-        .proj_portfolio, .proj_jollibols{
+        .proj_portfolio, .proj_jollibols, .proj_loan{
             animation:fadeInLeft;
             animation-duration: 2s;
         }
@@ -117,14 +128,18 @@
 
 
 // /* Large devices such as laptops (1024px and up) */
-@media only screen and (max-width: 1024px) {
-
+@media only screen and (max-width: 1099px) {
+    .projects .project-container .project .proj-desc i{
+        display:block;
+        margin-top:20px;
+        float:right;
+        position:unset;
+    }
 }
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (max-width: 826px) {
     .projects{
-
         .project-container{
             width:100%;
         }
@@ -144,6 +159,9 @@
                 .image{
                     width:100%;
                 }
+            }
+            .project:hover{
+                transform: unset;
             }
         }
     }

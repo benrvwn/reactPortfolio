@@ -121,7 +121,7 @@ function About() {
                     </ul>
                     <h8><b>Village88 coding bootcamp - Trainee</b></h8>
                     <ul>
-                        <li>Attended a three months intense training and gained a lot of knowledge which also the reason how I created this portfolio website and most of my projects.</li>
+                        <li>Participated in a rigorous three-month intensive training program, acquiring substantial knowledge that has notably contributed to the development of my portfolio website and the successful execution of a majority of my projects.</li>
                     </ul>
                 </>
             } />

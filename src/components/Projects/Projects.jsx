@@ -27,6 +27,15 @@ function Projects() {
         <div className='project-container'>
             <h1>PROJECTS</h1>
             <Project 
+                title='Loan Management System' 
+                desc='My personal project built for managing loans.'
+                className= 'loan'
+                divClass='proj_loan'
+                demo='https://drive.google.com/file/d/11muFIXSyrHPuRQ-oUPlgnaCGCDlEnkP_/view?usp=sharing'
+                tech='HTML, CSS, JQuery, Bootstrap, PHP'
+                github='https://github.com/benrvwn/loanManagement'
+            />
+            <Project 
                 title='SWEAP Monitoring System' 
                 desc='Built a system software application called Social Welfare Employees Association of the Philippines (SWEAP) monitoring system on Department of Social Welfare and Development (DSWD) '
                 className= 'sweap'
@@ -40,6 +49,7 @@ function Projects() {
                 desc='My personal website to showcase my skills, achievements and expertise.'
                 className='portfolio'
                 divClass='proj_portfolio'
+                demo='https://benhur-portfolio.netlify.app/'
                 tech='HTML, CSS, SASS, JavaScript, ReactJS'
                 github='https://github.com/benrvwn/reactPortfolio.git'
 

@@ -58,7 +58,9 @@ function Nav() {
             </li>
             <li className='mode-container'>
               <div className='mode-switch' onClick={handleTheme}>
-                <div className={mode}></div>
+                <div className={mode}>
+                  <i class="bi bi-moon-stars-fill"></i>
+                </div>
               </div>
             </li>
           </ul>
